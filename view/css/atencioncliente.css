@@ -1,0 +1,337 @@
+/*inicia diseño del menu */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2aab62;
+    padding: 10px;
+}
+.acciones button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.acciones button:first-child {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.acciones button:first-child:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+.acciones button:last-child {
+    background-color: #ffffff;
+    color: #008000;
+    border: 2px solid #008000;
+}
+
+.acciones button:last-child:hover {
+    background-color: #e6ffe6;
+    transform: scale(1.05);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F1B24A !important;
+}
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    display: block;
+}
+/*inicia diseño footer*/
+.copyright {
+    text-align: center;
+    background-color: #95B9B1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #95B9B1;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.icono-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+/* termina diseño de menu y termina footer*/
+/* inicia diseño de atencion al cliente */
+/*inicia diseño del menu */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2aab62;
+    padding: 10px;
+}
+.acciones button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.acciones button:first-child {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.acciones button:first-child:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+.acciones button:last-child {
+    background-color: #ffffff;
+    color: #008000;
+    border: 2px solid #008000;
+}
+
+.acciones button:last-child:hover {
+    background-color: #e6ffe6;
+    transform: scale(1.05);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F1B24A !important;
+}
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    display: block;
+}
+/*inicia diseño footer*/
+.copyright {
+    text-align: center;
+    background-color: #95B9B1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #95B9B1;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.icono-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+/* termina diseño de menu y termina footer*/
+/* inicia diseño de atencion al cliente */
+
+/* inicia diseño de atencion al cliente */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c6f6e9, #effffd);
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.atencion-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.atencion-title {
+    text-align: center;
+    font-size: 48px;
+    color: #1b9e70;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    font-size: 20px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+    color: #444;
+    line-height: 1.8;
+}
+
+.atencion-card {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 22px;
+    padding: 35px 40px;
+    margin-bottom: 35px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    position: relative;
+    border-left: 6px solid #1b9e70;
+}
+
+.atencion-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.atencion-card h2 {
+    font-size: 26px;
+    color: #1b9e70;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.atencion-card p,
+.atencion-card ul {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.atencion-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.atencion-card ul li {
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.atencion-card ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #1b9e70;
+    font-weight: bold;
+}
+
+.atencion-image {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.atencion-image img {
+    max-width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .atencion-container {
+        padding: 40px 20px;
+    }
+
+    .atencion-title {
+        font-size: 32px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .atencion-card h2 {
+        font-size: 20px;
+    }
+
+    .atencion-card p,
+    .atencion-card ul {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,237 @@
+/*inicia diseño del menu */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2aab62;
+    padding: 10px;
+}
+.acciones button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.acciones button:first-child {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.acciones button:first-child:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+.acciones button:last-child {
+    background-color: #ffffff;
+    color: #008000;
+    border: 2px solid #008000;
+}
+
+.acciones button:last-child:hover {
+    background-color: #e6ffe6;
+    transform: scale(1.05);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F1B24A !important;
+}
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    display: block;
+}
+/*inicia diseño footer*/
+.copyright {
+    text-align: center;
+    background-color: #95B9B1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #95B9B1;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.icono-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+/*termina diseño de menu y footer */
+/*inicia diseño de pagina funcionalidades */
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom right, #cdfde1, #e9faf0);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-funcionalidades {
+    text-align: center;
+    font-size: 40px;
+    color: #2aab62;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.titulo-funcionalidades::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #2aab62;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.func-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 10px;
+}
+
+.func-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.func-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.func-card::before {
+    content: "★";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 40px;
+    color: #c3fce6;
+    opacity: 0.4;
+    transform: rotate(20deg);
+}
+
+.func-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.func-card:hover img {
+    transform: scale(1.03);
+}
+
+.func-card h3 {
+    font-size: 24px;
+    color: #2aab62;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.func-card h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #2aab62;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+.func-card p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.func-card::after {
+    content: "ZoqueBus";
+    position: absolute;
+    top: 20px;
+    left: -27px;
+    background-color: #2aab62;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 25px;
+    transform: rotate(-45deg);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titulo-funcionalidades {
+        font-size: 30px;
+    }
+
+    .func-card h3 {
+        font-size: 20px;
+    }
+
+    .func-card p {
+        font-size: 14px;
+    }
+
+    .func-card::after {
+        display: none;
+    }
+}

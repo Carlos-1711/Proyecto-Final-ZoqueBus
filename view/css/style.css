@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F1B24A !important;
+}
+
+.busqueda {
+    background: url('../img/turismo4.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario-viaje {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.campo {
+    background-color: #789BBA;
+    border-radius: 15px;
+    padding: 15px 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    min-width: 200px;
+}
+.boton-reserva {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-reserva:hover {
+  background-color: #218838;
+}
+
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #3e3e3e;
+}
+
+.campo select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.ventajas {
+    background-color: #7c9a92;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.beneficio {
+    width: 250px;
+    background-color: #e0dab8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #95B9B1;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.redes a {
+    margin: 0 10px;
+}
+
+
+.icono-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+
+.nav-link.active {
+    background-color: white !important;
+    color: #000000 !important;
+    border-radius: 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2aab62;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #95B9B1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    display: block;
+}
+
+.acciones {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    gap: 15px;
+    z-index: 10;
+}
+
+
+.acciones button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.acciones button:first-child {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.acciones button:first-child:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+/*Esto es para el inicio de sesion*/
+/* Botón de cerrar (X) */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-button:hover {
+    color: #ff4b5c;
+}
+
+/* General */
+section .cuerpo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f3;
+}
+
+/* Modal */
+#modal-content {
+    display: none;
+    width: 800px;
+    height: 500px;
+    position: fixed; /* Cambiado a fixed para mantenerlo centrado incluso con scroll */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que esté por encima de todo */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Formulario */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-form {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in;
+}
+
+.container-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social-networks {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.social-networks ion-icon {
+    border: 1px solid #c9cccb;
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.container-form span {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.container-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #eeeeee;
+}
+
+.container-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.container-form a {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.button {
+    padding: 12px 25px;
+    width: auto;
+    height: 45px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #3ab397;
+    color: white;
+}
+
+/* Animación de formularios */
+.sign-up {
+    transform: translateX(-400px);
+}
+
+.container.toggle .sign-in {
+    transform: translateX(400px);
+}
+
+.container.toggle .sign-up {
+    transform: translateX(0);
+}
+
+/* Welcome */
+.container-welcome {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: #3ab397;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 50% 0 0 50%;
+}
+
+.container.toggle .container-welcome {
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color: #3aa8ad;
+}
+
+.container-welcome .welcome {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+.welcome-sign-in {
+    transform: translateX(100%);
+}
+
+.container.toggle .welcome-sign-in {
+    transform: translateX(0);
+}
+
+.container.toggle .welcome-sign-up {
+    transform: translateX(-100%);
+}
+
+.container-welcome h3 {
+    font-size: 40px;
+}
+
+.container-welcome p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container-welcome .button {
+    border: 2px solid white;
+    background-color: transparent;
+}
+.open-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3ab397;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.buscar-viajes-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.buscar-viajes-btn:hover {
+    background-color: #45a049;
+}

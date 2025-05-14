@@ -1,0 +1,328 @@
+/*inicia diseño del menu */
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2aab62;
+    padding: 10px;
+}
+.acciones button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.acciones button:first-child {
+    background-color: #008000;
+    color: #ffffff;
+}
+
+.acciones button:first-child:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+.acciones button:last-child {
+    background-color: #ffffff;
+    color: #008000;
+    border: 2px solid #008000;
+}
+
+.acciones button:last-child:hover {
+    background-color: #e6ffe6;
+    transform: scale(1.05);
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F1B24A !important;
+}
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    display: block;
+}
+/*inicia diseño footer*/
+.copyright {
+    text-align: center;
+    background-color: #95B9B1;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #95B9B1;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.icono-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+
+/* termina el diseño del menu y footer*/
+/* termina diseño de reservaciones */
+
+/* ---------- CONTENIDO CENTRAL RESERVACIONES ---------- */
+
+.pagina-horarios {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fef4;
+  color: #028d02;
+  padding-bottom: 2rem;
+}
+
+.pagina-horarios .contenedor {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem;
+  gap: 2rem;
+}
+
+.pagina-horarios .filtros-bar {
+  background-color: #eaf8ea;
+  padding: 0.75rem 2rem;
+  font-size: 0.95rem;
+  color: #01bd01;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c8e4c8;
+  font-weight: 500;
+}
+
+.pagina-horarios .filtros-bar span:hover {
+  color: #018a4b;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pagina-horarios .resultados {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.pagina-horarios .viaje {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 128, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.3s;
+  border-left: 6px solid #00c966;
+}
+
+.pagina-horarios .viaje:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 128, 0, 0.15);
+}
+
+.pagina-horarios .logo {
+  width: 70px;
+  height: auto;
+  margin-right: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-horarios .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.pagina-horarios .horario {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #01c061;
+}
+
+.pagina-horarios .ruta {
+  font-size: 1rem;
+  color: #333;
+}
+
+.pagina-horarios .precio {
+  margin-top: 0.3rem;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #bfa100;
+}
+
+.pagina-horarios aside.informacion {
+  flex: 1;
+  background-color: #ffffff;
+  border-left: 5px solid #00d647;
+  padding: 1.5rem;
+  height: fit-content;
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.pagina-horarios aside.informacion h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #06c766;
+}
+
+.pagina-horarios aside.informacion p {
+  margin: 0.8rem 0;
+  font-size: 0.95rem;
+}
+
+.pagina-horarios .editar {
+  background: none;
+  border: 2px solid #00ac56;
+  padding: 0.6rem 1rem;
+  color: #00c563;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pagina-horarios .editar:hover {
+  background: #00ac56;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pagina-horarios .contenedor {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pagina-horarios aside.informacion {
+    border-left: none;
+    border-top: 5px solid #006622;
+    margin-left: 0;
+  }
+
+  .pagina-horarios .logo {
+    width: 50px;
+  }
+
+  .pagina-horarios .filtros-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+}
+.header-horarios {
+  background: #37745B;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 1rem;
+}
+
+.header-horarios h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-horarios .filtros-bar {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 0.75rem 2rem;
+font-size: 0.95rem;
+color: #ffffff;
+display: flex;
+justify-content: center;
+gap: 2rem;
+margin-top: 1rem;
+border-radius: 10px;
+font-weight: 500;
+}
+
+.header-horarios .filtros-bar span:hover {
+color: #ffd700;
+cursor: pointer;
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+.header-horarios .filtros-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+}
+.pagina-horarios .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    }
+
+.pagina-horarios .detalle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.pagina-horarios .precio-btn {
+    background-color: #e91010;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 40px 10px 200px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+.pagina-horarios .precio-btn:hover {
+    background-color: #e69a00;
+    transform: scale(1.05);
+}

@@ -1,0 +1,253 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2aab62;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-link {
+    padding: 10px 15px;
+    color: white !important;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F1B24A !important;
+}
+
+.nav-link.active {
+    background-color: #ffffff !important;
+    color: #2aab62 !important;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #95B9B1;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #95B9B1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.redes a {
+    margin: 0 10px;
+}
+
+.icono-red {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.contacto {
+    color: black;
+}
+/*inicia diseño del menu */
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    display: block;
+}
+/* termina el diseño del menu y footer*/
+/* termina diseño de pasajeros */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #c6f7e6, #e1f8f0, #bff0da);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: #333;
+  }
+  
+  /* Animación suave del fondo */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden; /* Para efectos de transición */
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #2aab62;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #F1B24A;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  h1:hover {
+    color: #F1B24A;
+    transform: scale(1.05);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  section {
+    background-color: #ffffffcc;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
+  }
+  
+  section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    filter: brightness(1.1) saturate(1.2); /* Efecto de brillo y saturación */
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #2aab62;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-left: 5px solid #F1B24A;
+    padding-left: 10px;
+    position: relative;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 10px;
+    width: 40px;
+    height: 3px;
+    background-color: #2aab62;
+    opacity: 0.4;
+  }
+  
+  h2:hover {
+    color: #F1B24A;
+    transform: translateX(5px);
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  p:hover {
+    color: #2aab62;
+    transform: translateY(-2px);
+  }
+  
+  ul {
+    list-style: disc;
+    padding-left: 25px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, color 0.3s ease, letter-spacing 0.2s ease;
+  }
+  
+  ul li:hover {
+    transform: translateX(5px);
+    color: #2aab62;
+    letter-spacing: 1px;
+  }
+  
+  button {
+    background-color: #2aab62;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #F1B24A;
+    transform: scale(1.05);
+  }
+  
+  /* Efectos adicionales de hover en enlaces */
+  a {
+    color: #2aab62;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  a:hover {
+    color: #F1B24A;
+    transform: translateX(5px);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    p, ul li {
+      font-size: 15px;
+    }
+  
+    .container {
+      padding: 20px 10px;
+    }
+  }
